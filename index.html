@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Scholars Learning Centre</title>
+<meta name="description" content="Scholars Learning Centre - Best coaching institute in Birubari, Guwahati for Class I to XII. CBSE, SEBA, Science, Arts, Commerce.">
+<meta name="keywords" content="Scholars Learning Centre, coaching Guwahati, tution Birubari, CBSE coaching, SEBA coaching, class 10 tution Guwahati">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+overflow-x:hidden;
+width:100%;
+}
+
+/* NAVBAR */
+
+nav{display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+flex-wrap:nowrap;}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+white-space:nowrap;
+}
+
+.logo img{
+width: auto;
+height:45px;
+object-fit:contain;
+}
+
+.logo h2{
+color:#FFD700;
+font-size:22px;
+white-space:nowrap;
+}
+
+nav ul{display:flex;
+list-style:none;
+gap:25px;
+align-items:center;
+flex-wrap:nowrap;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#FFD700;
+}
+
+
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+color:white;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+padding:60px 8%;
+background:url('https://i.postimg.cc/NMfTvMQ7/IMG-20260318-WA0017.jpg') center/cover;
+background-position:center;
+}
+
+.hero-text{
+max-width:600px;
+background:rgba(0,0,0,0.5);
+padding:30px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+.btn{
+padding:12px 25px;
+background:#FFD700;
+border:none;
+border-radius:25px;
+font-weight:600;
+cursor:pointer;
+text-decoration:none;
+color:black;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 8%;
+}
+
+@media(max-width:600px){
+section{padding:40px 5%;}
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#FFD700;
+}
+
+@media(max-width:600px){
+.section-title{font-size:26px; margin-bottom:25px;}
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+/* COURSES */
+
+.course-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.course{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.course:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.15);
+}
+
+.course h3{
+color:#FFD700;
+margin-bottom:10px;
+}
+
+/* FACULTY */
+
+.faculty-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+@media(max-width:600px){
+.faculty-grid{
+grid-template-columns:1fr 1fr;
+gap:8px;
+}
+
+}
+
+.faculty{
+text-align:center;
+background:rgba(255,255,255,0.08);
+padding:10px;
+border-radius:10px;
+transition:0.4s;
+cursor:pointer;
+}
+
+@media (hover: hover){
+.faculty:hover{
+transform:translateY(-10px) scale(1.03);
+background:rgba(255,255,255,0.18);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+}
+
+.faculty img{
+width:100%;
+height:150px;
+object-fit:cover;
+object-position:top;
+border-radius:10px;
+margin-bottom:10px;
+transition:0.4s;
+}
+
+.zoom-fix {
+    object-fit: cover;
+    transform: scale(0.9);
+    background-color: #fff;
+}
+
+@media(max-width:600px){
+.faculty img{
+height:120px;
+width:100%;
+margin:0 auto 10px auto;
+display:block;
+object-position:top;
+}
+
+@media(max-width:600px){
+.faculty img{
+height:120px;
+width:100%;
+object-fit:cover;
+border-radius:8px;
+}
+}
+
+}
+
+@media (hover: hover){
+.faculty:hover img{
+transform:scale(1.08);
+}
+}
+
+/* RESULTS */
+
+.results{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.result-box{
+text-align:center;
+background:rgba(255,255,255,0.1);
+padding:30px;
+border-radius:10px;
+}
+
+.result-box h2{
+color:#FFD700;
+}
+
+/* TESTIMONIAL */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.testimonial{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+display:flex;
+justify-content:center;
+}
+
+.contact-info{
+max-width:400px;
+}
+
+.contact-info p{
+font-size:18px;
+margin-bottom:20px;
+display:flex;
+gap:12px;
+align-items:flex-start;
+}
+
+.contact-info i{
+color:#FFD700;
+font-size:20px;
+margin-top:3px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:black;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:15px;
+border-radius:50%;
+font-size:30px;
+color:white;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+@media(max-width:768px){
+
+.whatsapp{
+width:50px;
+height:50px;
+font-size:26px;
+}
+
+}
+
+/* MOBILE */
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width:600px){
+
+nav{
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+flex-direction:column;
+gap:10px;
+margin-top:10px;
+width:100%;
+}
+
+.hero{
+height:auto;
+padding:80px 8%;
+}
+
+.hero h1{
+font-size:32px;
+line-height:1.3;
+}
+
+.about{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.faculty-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.results{
+flex-direction:column;
+align-items:center;
+}
+
+.contact{
+flex-direction:column;
+}
+
+}
+
+
+/* MOBILE NAVBAR */
+
+@media(max-width:600px){
+
+.menu-toggle{
+display:block;
+font-size:26px;
+cursor:pointer;
+color:white;
+margin-left:auto;
+}
+
+nav{
+flex-wrap:wrap;
+}
+
+nav ul{
+display:none;
+flex-direction:column;
+width:100%;
+background:rgba(0,0,0,0.9);
+padding:20px;
+margin-top:10px;
+}
+
+nav ul.active{
+display:flex;
+}
+
+}
+
+@media (max-width:600px){
+
+.navbar h1{
+font-size:16px;
+}
+
+.logo{
+height:40px;
+}
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+<img src="https://wallpapers.com/images/hd/saraswati-mata-hindu-goddess-zno9r57wg4weq43u.jpg" alt="Saraswati Logo">
+<h2>Scholars Learning</h2>
+</div>
+
+<div class="menu-toggle">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<ul id="nav-menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#faculty">Faculty</a></li>
+<li><a href="#results">Results</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<a class="enroll-btn" href="#contact"></a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Scholars Learning Centre</h1>
+
+<p>Maximize your learning with personalized sessions.</p>
+
+<p><b>Class I – X (All Subjects CBSE & SEBA)</b><br>
+<b>Class XI – XII (Science, Arts, Commerce)</b></p>
+
+<a href="#contact" class="btn">Enroll Now</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+<div>
+<p>
+
+Scholars Learning Centre is a premier coaching institute in Birubari, Guwahati dedicated to providing quality education for students from Class I to XII.
+
+We focus on conceptual clarity, regular mock tests, doubt clearing sessions, and personal attention to every student.
+
+</p>
+</div>
+
+<img src="https://i.postimg.cc/DZkWb7BT/IMG-20260314-WA0009.jpg" alt="Classroom">
+
+</div>
+
+</section>
+
+<!-- COURSES -->
+
+<section id="courses">
+
+<h2 class="section-title">Courses Offered</h2>
+
+<div class="course-grid">
+
+<div class="course">
+<h3>Primary Classes</h3>
+<p>Class I – V</p>
+<p>All Subjects</p>
+</div>
+
+<div class="course">
+<h3>Secondary Classes</h3>
+<p>Class VI – X</p>
+<p>CBSE & SEBA</p>
+</div>
+
+<div class="course">
+<h3>Higher Secondary</h3>
+<p>Class XI – XII</p>
+<p>Science, Arts, Commerce</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FACULTY -->
+
+<section id="faculty">
+
+<h2 class="section-title">Our Faculty</h2>
+
+<div class="faculty-grid">
+
+<div class="faculty">
+<img src="https://i.postimg.cc/LsC6nBQM/IMG-20260316-WA0008.jpg">
+<h4>Rashmi Rekha Devi</h4>
+<p>MSC</p>
+</div>
+
+<div class="faculty">
+<img src="https://i.postimg.cc/vTdRB4yG/IMG-20260316-WA0007.jpg" style="object-position: center 15%;">
+<h4>Shibani Kashyap</h4>
+<p>M.Pharm</p>
+</div>
+
+<div class="faculty">
+<img src="https://i.postimg.cc/yYYQTmLH/IMG-20260316-WA0009.jpg" style="object-position: center 50%;">
+<h4>Ashim Barman</h4>
+<p>MSC</p>
+</div>
+
+<div class="faculty">
+<img src="https://i.postimg.cc/zvtmRD5N/IMG-20260318-WA0006.jpg" style="object-position: center 10%;">
+<h4>Debolina Guha</h4>
+<p>BA(Hons) , B.Ed</p>
+</div>
+
+<div class="faculty">
+<img src="https://i.postimg.cc/CxLkJPwN/IMG-20260317-WA0018.jpg">
+<h4>Jyotishman Sharma</h4>
+<p>M.Pharm</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- RESULTS -->
+
+<section id="results">
+
+<h2 class="section-title">Our Results</h2>
+
+<div class="results">
+
+<div class="result-box">
+<h2>95%</h2>
+<p>Board Success Rate</p>
+</div>
+
+<div class="result-box">
+<h2>50+</h2>
+<p>Students Trained</p>
+</div>
+
+<div class="result-box">
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+
+<section id="testimonials">
+
+<h2 class="section-title">Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>"The teaching is excellent and I've seen a huge improvement in my marks and understanding. The teachers are very dedicated and patient — they explain difficult topics in a very simple way. Highly recommend to other parents!"</p>
+<h4>- Student</h4>
+</div>
+
+<div class="testimonial">
+<p>My child improved marks drastically after joining here. Highly recommended to other parents</p>
+<h4>- Parent</h4>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+
+<div class="contact-info">
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Birubari, Jonakpur<br>
+House No 46, 2nd Floor<br>
+Guwahati
+</p>
+
+<p>
+<i class="fa-solid fa-phone"></i>
+7002115165, 9181181418
+</p>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+guwahatimishra@gmail.com
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p class="credit">Website Created By MANASH</p>
+
+<p>© 2026 Scholars Learning Centre | Guwahati</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/917002115165"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<script>
+
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector("#nav-menu");
+
+toggle.onclick = () => {
+menu.classList.toggle("active");
+};
+
+</script>
+
+</body>
+</html>
